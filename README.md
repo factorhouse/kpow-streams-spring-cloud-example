@@ -4,6 +4,8 @@ Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/sprin
 
 ## Integration Steps
 
+### Get the kPow Streams Dependency
+
 Include the kPow Streams Agent library in your application:
 
 ```xml
@@ -13,6 +15,8 @@ Include the kPow Streams Agent library in your application:
   <version>0.2.7</version>
 </dependency>
 ```
+
+### Integrate the Agent
 
 Start the kPow Streams Agent (view full source)
 
@@ -49,9 +53,13 @@ public static void main(String[] args) {
     }
 ```
 
+### Start Wordcount and kPow
+
 * Follow the original project steps (below)
 * Start kPow (see: [kPow Local](https://github.com/operatr-io/kpow-local) for local evaluation)
 * Navigate to localhost:3000, then Streams
+
+### Example UI
 
 ![kpow-kafka-streams-wordcount-viz](https://user-images.githubusercontent.com/2832467/131286862-36589a97-667a-4d56-bcb2-bc9fcfd3abe7.png)
 
