@@ -49,7 +49,9 @@ public static void main(String[] args) {
     }
 ```
 
-Follow the original project steps (below), then start kPow (see: kPow Local for evaluation) and navigate to localhost:3000
+* Follow the original project steps (below)
+* Start kPow (see: [kPow Local](https://github.com/operatr-io/kpow-local) for local evaluation)
+* Navigate to localhost:3000, then Streams
 
 ![kpow-kafka-streams-wordcount-viz](https://user-images.githubusercontent.com/2832467/131286862-36589a97-667a-4d56-bcb2-bc9fcfd3abe7.png)
 
