@@ -1,0 +1,43 @@
+spring.cloud.stream:
+  function:
+    definition: process
+    bindings:
+      process-in-0: words
+      process-out-0: counts
+#  bindings:
+#    input:
+#      destination: input
+#    output:
+#      destination: output
+
+  kafka:
+    streams:
+      binder:
+        applicationId: hello-word-count-sample
+        configuration:
+          commit.interval.ms: 100
+          default:
+            key.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+            value.serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+#Enable metrics
+management:
+  metrics:
+    export:
+      wavefront:
+        enabled: false
+      prometheus:
+        enabled: false
+        rsocket:
+          enabled: false
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: health,info,bindings
+#        include: metrics,health,info,bindings
+#Enable logging to debug for spring kafka config
+#logging:
+#  level:
+#    org.springframework.kafka.config: debug
