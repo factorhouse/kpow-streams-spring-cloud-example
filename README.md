@@ -1,6 +1,6 @@
 # Monitor Spring Kafka Streams Applications with kPow
 
-This example integrates the [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams application with the [kPow Streams Agent](https://github.com/operatr-io/kpow-streams-agent).
+Adapted [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams application with the [kPow Streams Agent](https://github.com/operatr-io/kpow-streams-agent).
 
 ## Integration Steps
 
