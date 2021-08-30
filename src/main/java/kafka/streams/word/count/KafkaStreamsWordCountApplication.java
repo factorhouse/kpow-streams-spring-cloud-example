@@ -44,15 +44,15 @@ public class KafkaStreamsWordCountApplication {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(KafkaStreamsWordCountApplication.class, args);
 
-		/*
-		    The StreamsBuilderFactoryBean name is '&stream-builder-' + your function name from config, .e.g
 
-		    spring.cloud.stream:
-              function:
-                definition: process <-- '&stream-builder-' + this name here
+        // The StreamsBuilderFactoryBean name is '&stream-builder-' + your function name from config, .e.g
+        //
+        // spring.cloud.stream:
+        //   function:
+        //     definition: process <-- '&stream-builder-' + this name here
+        //
+        // We use the SBFB to obtain the streams and topology of your built Spring Kafka Streams application
 
-            We use the SBFB to obtain the streams and topology of your built Spring Kafka Streams application
-        */
         StreamsBuilderFactoryBean streamsBuilderFactoryBean = context.getBean("&stream-builder-process", StreamsBuilderFactoryBean.class);
         KafkaStreams streams = streamsBuilderFactoryBean.getKafkaStreams();
         Topology topology = streamsBuilderFactoryBean.getTopology();
