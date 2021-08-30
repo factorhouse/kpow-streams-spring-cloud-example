@@ -43,8 +43,7 @@ public class KafkaStreamsWordCountApplication {
 
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(KafkaStreamsWordCountApplication.class, args);
-
-
+        
         // The StreamsBuilderFactoryBean name is '&stream-builder-' + your function name from config, .e.g
         //
         // spring.cloud.stream:
