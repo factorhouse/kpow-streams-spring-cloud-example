@@ -65,7 +65,8 @@ public static void main(String[] args) {
 
 * Follow the original project steps (below)
 * Start kPow (see: [kPow Local](https://github.com/operatr-io/kpow-local) for local evaluation)
-* Navigate to localhost:3000, then Streams
+* If using the single-node Kafka Cluster from this project, set `REPLICATION_FACTOR=1` when running kPow
+* Navigate to localhost:3000 > Streams
 
 ### Example UI
 
