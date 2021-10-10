@@ -1,4 +1,4 @@
-# Monitor Spring Kafka Streams Applications with kPow
+# Monitor Spring Cloud Kafka Streams with kPow
 
 Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams application with the [kPow Streams Agent](https://github.com/operatr-io/kpow-streams-agent).
 
