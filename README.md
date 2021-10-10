@@ -10,7 +10,17 @@ Run this project with the original instructions below, we have integrated the kP
 
 Once the project is started, run kPow with the target cluster and navigate to 'Streams' to view the live topology and metrics.
 
-## kPow Agent // Wordcount Integration Steps
+### Quickstart
+
+* Follow the original project setup steps (instructions below)
+* Put data on the wordcount topic (instructions below)
+* Start kPow (see: [kPow Local](https://github.com/operatr-io/kpow-local) for local evaluation + trial licenses)
+  * If using the single-node Kafka Cluster from this project, set `REPLICATION_FACTOR=1` when running kPow
+* Navigate to localhost:3000 > Streams
+* View WordCount Topology + Metrics
+* Navigate to Consumers to reset WordCount offsets 
+
+## How We Integrated kPow + WordCount Project
 
 ### Get the kPow Streams Dependency
 
@@ -60,13 +70,6 @@ public static void main(String[] args) {
         registry.register(streams, topology);
     }
 ```
-
-### Start Wordcount and kPow
-
-* Follow the original project steps (below)
-* Start kPow (see: [kPow Local](https://github.com/operatr-io/kpow-local) for local evaluation)
-* If using the single-node Kafka Cluster from this project, set `REPLICATION_FACTOR=1` when running kPow
-* Navigate to localhost:3000 > Streams
 
 ### Example UI
 
