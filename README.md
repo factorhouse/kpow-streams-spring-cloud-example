@@ -12,7 +12,7 @@ Include the kPow Streams Agent library in your application:
 <dependency>
   <groupId>io.operatr</groupId>
   <artifactId>kpow-streams-agent</artifactId>
-  <version>0.2.7</version>
+  <version>0.2.8</version>
 </dependency>
 ```
 
