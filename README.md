@@ -2,7 +2,11 @@
 
 Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams application with the [kPow Streams Agent](https://github.com/operatr-io/kpow-streams-agent).
 
-## Integration Steps
+Run this project with the original instructions below, we have integrated the kPow Agent.
+
+Once the project is started, run kPow with the target cluster and navigate to 'Streams' to view the live topology and metrics.
+
+## kPow Agent // Wordcount Integration Steps
 
 ### Get the kPow Streams Dependency
 
