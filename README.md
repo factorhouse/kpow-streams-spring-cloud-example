@@ -8,7 +8,7 @@ Run this project with the original instructions below, we have integrated the kP
 2021-10-10 16:53:50,299  INFO kpow-streams-agent-0 i.o.k.agent:326 - kPow: sent [112] streams metrics for application.id hello-word-count-sample
 ```
 
-Once the project is started, run kPow with the target cluster and navigate to 'Streams' to view the live topology and metrics.
+Once started, run kPow with the target cluster and navigate to 'Streams' to view the live topology and metrics.
 
 ### Quickstart
 
