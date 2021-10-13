@@ -72,8 +72,9 @@ public static void main(String[] args) {
         registry.register(streams, topology);
     }
 ```
+----
 
-*-- Original Project Readme Follows --*
+### Original Project Readme Follows
 
 ## What is this app?
 
