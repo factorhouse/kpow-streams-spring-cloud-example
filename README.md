@@ -7,7 +7,7 @@ Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/sprin
 Run this project with the original instructions below, we have integrated the kPow Agent. You will see log-lines like:
 
 ```
-2021-10-10 16:53:50,299  INFO kpow-streams-agent-0 i.o.k.agent:326 - kPow: sent [112] streams metrics for application.id hello-word-count-sample
+kPow: sent [112] streams metrics for application.id hello-word-count-sample
 ```
 
 Once started, run kPow with the target cluster and navigate to 'Streams' to view the live topology and metrics.
