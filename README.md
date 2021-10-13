@@ -1,4 +1,4 @@
-# Monitor Spring Cloud Kafka Streams with kPow
+# Monitor Spring Cloud Applications with kPow
 
 ![kpow-kafka-streams-wordcount-viz](https://user-images.githubusercontent.com/2832467/131286862-36589a97-667a-4d56-bcb2-bc9fcfd3abe7.png)
 
