@@ -1,5 +1,7 @@
 # Monitor Spring Cloud Kafka Streams with kPow
 
+![kpow-kafka-streams-wordcount-viz](https://user-images.githubusercontent.com/2832467/131286862-36589a97-667a-4d56-bcb2-bc9fcfd3abe7.png)
+
 Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams application with the [kPow Streams Agent](https://github.com/operatr-io/kpow-streams-agent).
 
 Run this project with the original instructions below, we have integrated the kPow Agent. You will see log-lines like:
@@ -70,10 +72,6 @@ public static void main(String[] args) {
         registry.register(streams, topology);
     }
 ```
-
-### Example UI
-
-![kpow-kafka-streams-wordcount-viz](https://user-images.githubusercontent.com/2832467/131286862-36589a97-667a-4d56-bcb2-bc9fcfd3abe7.png)
 
 *-- Original Project Readme Follows --*
 
