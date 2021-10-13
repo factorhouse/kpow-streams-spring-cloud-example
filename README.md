@@ -22,7 +22,7 @@ Once started, run kPow with the target cluster and navigate to 'Streams' to view
 * View WordCount Topology + Metrics
 * Navigate to Consumers to reset WordCount offsets 
 
-## How We Integrated kPow + WordCount Project
+## How We Integrated WordCount Streams with the kPow Agent
 
 ### Get the kPow Streams Dependency
 
