@@ -80,7 +80,7 @@ public static void main(String[] args) {
 
 This is an example of a Spring Cloud Stream processor using Kafka Streams support.
 
-The example is based on the word count application from the https://github.com/confluentinc/examples/blob/3.2.x/kafka-streams/src/main/java/io/confluent/examples/streams/WordCountLambdaExample.java[reference documentation].
+The example is based on the word count application from the [reference documentation](https://github.com/confluentinc/examples/blob/3.2.x/kafka-streams/src/main/java/io/confluent/examples/streams/WordCountLambdaExample.java).
 It uses a single input and a single output.
 In essence, the application receives text messages from an input topic and computes word occurrence counts in a configurable time window and report that in an output topic.
 The sample uses a default timewindow of 30 seconds.
