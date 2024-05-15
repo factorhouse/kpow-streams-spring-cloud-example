@@ -1,32 +1,32 @@
-# Monitor Spring Cloud Applications with kPow
+# Monitor Spring Cloud Applications with Kpow
 
 ![kpow-kafka-streams-wordcount-viz](https://user-images.githubusercontent.com/2832467/131286862-36589a97-667a-4d56-bcb2-bc9fcfd3abe7.png)
 
-Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams example application with the [kPow Streams Agent](https://github.com/operatr-io/kpow-streams-agent).
+Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams example application with the [Kpow Streams Agent](https://github.com/operatr-io/kpow-streams-agent).
 
-Run this project with the original instructions below, we have integrated the kPow Agent. You will see log-lines like:
+Run this project with the original instructions below, we have integrated the Kpow Agent. You will see log-lines like:
 
 ```
-kPow: sent [112] streams metrics for application.id hello-word-count-sample
+Kpow: sent [112] streams metrics for application.id hello-word-count-sample
 ```
 
-Once started, run kPow with the target cluster and navigate to 'Streams' to view the live topology and metrics.
+Once started, run Kpow with the target cluster and navigate to 'Streams' to view the live topology and metrics.
 
 ### Quickstart
 
 * Follow the original project setup steps (instructions below)
 * Put data on the wordcount topic (instructions below)
-* Start kPow (see: [kPow Local](https://github.com/operatr-io/kpow-local) for local evaluation + trial licenses)
-  * If using the single-node Kafka Cluster from this project, set `REPLICATION_FACTOR=1` when running kPow
+* Start Kpow (see: [Kpow Local](https://github.com/operatr-io/kpow-local) for local evaluation + trial licenses)
+  * If using the single-node Kafka Cluster from this project, set `REPLICATION_FACTOR=1` when running Kpow
 * Navigate to localhost:3000 > Streams
 * View WordCount Topology + Metrics
 * Navigate to Consumers to reset WordCount offsets 
 
-## How We Integrated WordCount Streams with the kPow Agent
+## How We Integrated WordCount Streams with the Kpow Agent
 
-### Get the kPow Streams Dependency
+### Get the Kpow Streams Dependency
 
-Include the kPow Streams Agent library in your application:
+Include the Kpow Streams Agent library in your application:
 
 ```xml
 <dependency>
@@ -38,7 +38,7 @@ Include the kPow Streams Agent library in your application:
 
 ### Integrate the Agent
 
-Start the kPow Streams Agent (view full source)
+Start the Kpow Streams Agent (view full source)
 
 ```java
 public static void main(String[] args) {
@@ -56,14 +56,14 @@ public static void main(String[] args) {
         KafkaStreams streams = streamsBuilderFactoryBean.getKafkaStreams();
         Topology topology = streamsBuilderFactoryBean.getTopology();
 
-        // Create connection properties for the StreamsRegistry producer to send metrics to internal kPow topics
+        // Create connection properties for the StreamsRegistry producer to send metrics to internal Kpow topics
         // You should be able to use streamsBuilderFactoryBean.getStreamsConfiguration() but in this particular case
         // Those properties contain 'bootstrap.servers = [[localhost:9092]]' which errors on startup
         
         Properties properties = new Properties();
         properties.setProperty("bootstrap.servers", "127.0.0.1:9092");
 
-        // Create a kPow StreamsRegistry
+        // Create a Kpow StreamsRegistry
         
         StreamsRegistry registry = new StreamsRegistry(properties);
 
