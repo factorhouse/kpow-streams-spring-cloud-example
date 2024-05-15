@@ -2,7 +2,7 @@
 
 ![kpow-kafka-streams-wordcount-viz](https://user-images.githubusercontent.com/2832467/131286862-36589a97-667a-4d56-bcb2-bc9fcfd3abe7.png)
 
-Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams example application with the [Kpow Streams Agent](https://github.com/operatr-io/kpow-streams-agent).
+Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams example application with the [Kpow Streams Agent](https://github.com/factorhouse/kpow-streams-agent).
 
 Run this project with the original instructions below, we have integrated the Kpow Agent. You will see log-lines like:
 
@@ -16,7 +16,7 @@ Once started, run Kpow with the target cluster and navigate to 'Streams' to view
 
 * Follow the original project setup steps (instructions below)
 * Put data on the wordcount topic (instructions below)
-* Start Kpow (see: [Kpow Local](https://github.com/operatr-io/kpow-local) for local evaluation + trial licenses)
+* Start Kpow (see: [Kpow Local](https://github.com/factorhouse/kpow-local) for local evaluation + trial licenses)
   * If using the single-node Kafka Cluster from this project, set `REPLICATION_FACTOR=1` when running Kpow
 * Navigate to localhost:3000 > Streams
 * View WordCount Topology + Metrics
