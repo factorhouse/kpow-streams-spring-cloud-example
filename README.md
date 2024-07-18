@@ -1,6 +1,7 @@
 # Monitor Spring Cloud Applications with Kpow
 
-![kpow-kafka-streams-wordcount-viz](https://user-images.githubusercontent.com/2832467/131286862-36589a97-667a-4d56-bcb2-bc9fcfd3abe7.png)
+![streams-topology-usage](https://github.com/user-attachments/assets/5991944d-da9f-4197-b819-1fb9efe04b08)
+
 
 Integrated [Spring Cloud Stream Wordcount](https://github.com/spring-cloud/spring-cloud-stream-samples/tree/main/kafka-streams-samples/kafka-streams-word-count) Kafka Streams example application with the [Kpow Streams Agent](https://github.com/factorhouse/kpow-streams-agent).
 
